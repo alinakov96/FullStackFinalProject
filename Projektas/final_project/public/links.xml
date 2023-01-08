@@ -1,0 +1,10 @@
+<pages>
+<link>
+<title>New Track</title>
+<url>https://finalproject.test/create.php</url>
+</link>
+<link>
+<title>Home</title>
+<url>http://finalproject.test/index.php</url>
+</link>
+</pages>

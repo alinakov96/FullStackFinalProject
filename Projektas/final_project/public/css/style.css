@@ -1,0 +1,234 @@
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: darkslategray;
+}
+
+header {
+  display: flex;
+  justify-content: right;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  list-style-type: none;
+}
+header nav li {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-self: center;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav a {
+  color: azure;
+  text-decoration: none;
+}
+
+header nav ul li input {
+  background: none;
+  color: azure;
+  border: 1px solid azure;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#login-form {
+  padding: 2rem 10rem;
+  background-color: black;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem azure;
+}
+
+section#login-form h1 {
+  color: azure;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+section#login-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#login-form form input {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0.5rem;
+  background: none;
+  color: azure;
+  border: 1px solid azure;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+section.music-list {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+article.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 0px #d3d3d3;
+  transition: all 250ms ease-in;
+  width: 100%;
+  margin: 0.4%;
+}
+
+article.card img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+article.card > * {
+  margin-bottom: 15px;
+}
+
+article .card-description,
+article .card-details {
+  font-size: 1em;
+}
+
+article.card.small {
+  width: 32.5%;
+}
+
+article.card.small img {
+  height: 400px;
+}
+
+article.card.small:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 9px 2px #d3d3d3;
+}
+
+article > .card-details,
+article > .card-description {
+  letter-spacing: 1.3px;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+article table {
+  font-size: 0.9em;
+  width: 100%;
+  text-align: left;
+}
+
+article table tr {
+  vertical-align: top;
+}
+
+article table th {
+  white-space: nowrap;
+}
+
+article table td {
+  padding-left: 5px;
+}
+
+nav ul li .dropdown > a:hover {
+  background-color: black;
+}
+
+nav .dropdown:hover > .dropdown-list {
+  opacity: 1;
+  transform: scaleY(100%);
+  transform-origin: top;
+  transition: transform 300ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+nav .dropdown > .dropdown-list a:hover {
+  background: black;
+}
+
+.dropdown > .dropdown-list {
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  top: 30px;
+  right: 0;
+  background: black;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 100ms ease-in-out, opacity 300ms ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.dropdown li {
+  display: block;
+  padding: 0;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: azure;
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.dropdown a:not(:last-child) {
+  border-bottom: none;
+}
+
+main a {
+  background-color: azure;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+section form label {
+  color: azure;
+}
+
+section form input {
+  margin: 0.5rem 0;
+  background: azure;
+  border: 1px solid azure;
+  border-radius: 0.5rem;
+}
